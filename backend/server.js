@@ -6,7 +6,7 @@ var app         = express();
 
 const baseUrl = 'https://addb.absolutdrinks.com/drinks/';
 const apiString = '/?apiKey=';
-// const ADDB_API_KEY = process.env.ADDB_API_KEY;
+const ADDB_API_KEY = process.env.ADDB_API_KEY;
 
 /* let's add the ability ajax to our server from anywhere! */
 app.use(cors());
