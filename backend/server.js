@@ -6,13 +6,23 @@ var app         = express();
 
 const baseUrl = 'https://addb.absolutdrinks.com/drinks/';
 const apiString = '/?apiKey=';
-const ADDB_API_KEY = process.env.ADDB_API_KEY;
+// const ADDB_API_KEY = process.env.ADDB_API_KEY;
 
 /* let's add the ability ajax to our server from anywhere! */
 app.use(cors());
 
+app.use(bodyParser.json())
+
 /* extended:true = put it in an obj */
 app.use(bodyParser.urlencoded({extended: true}));
+
+/* static route */
+app.use(express.static(__dirname + '/public'))
+
+/* config for browser history in react */
+app.get('*', (req, res) =>
+  res.sendFile(path.resolve(__dirname, 'public', 'index.html'))
+)
 
 /* ADDb api search */
 app.get('/drinks/:drinkName', function(req, res) {
@@ -20,7 +30,7 @@ app.get('/drinks/:drinkName', function(req, res) {
 
   /*
   example of full query to ADDb:
-  https://addb.absolutdrinks.com/drinks/absolut-cosmopolitan?apiKey=66c01df4adb3407db622b6f88ebdd5c8
+  https://addb.absolutdrinks.com/drinks/absolut-cosmopolitan?apiKey=xxx
   */
 
   const searchText = req.params.drinkName;
@@ -61,7 +71,12 @@ app.get('/base/:drinkBase', function(req, res) {
 
 // }
 
+// dev
+// app.listen(3333, function(){
+//   console.log('listen to events on a "port".')
+// });
 
-app.listen(3333, function(){
-  console.log('listen to events on a "port".')
-});
+// prod
+app.listen(process.env.PORT || 8080, () =>
+  console.log('app listening')
+)
