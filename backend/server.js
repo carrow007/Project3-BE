@@ -17,12 +17,12 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended: true}));
 
 /* static route */
-app.use(express.static(__dirname + '/public'))
+// app.use(express.static(__dirname + '/public'))
 
 /* config for browser history in react */
-app.get('*', (req, res) =>
-  res.sendFile(path.resolve(__dirname, 'public', 'index.html'))
-)
+// app.get('*', (req, res) =>
+//   res.sendFile(path.resolve(__dirname, 'public', 'index.html'))
+// )
 
 /* ADDb api search */
 app.get('/drinks/:drinkName', function(req, res) {
@@ -67,16 +67,13 @@ app.get('/base/:drinkBase', function(req, res) {
   })
 });
 
-// app.get('/base/:baseLiquor') {
-
-// }
 
 // dev
-// app.listen(3333, function(){
-//   console.log('listen to events on a "port".')
-// });
+app.listen(3333, function(){
+  console.log('listen to events on a "port".')
+});
 
 // prod
-app.listen(process.env.PORT || 8080, () =>
-  console.log('app listening')
-)
+// app.listen(process.env.PORT || 8080, () =>
+//   console.log('app listening')
+// )
