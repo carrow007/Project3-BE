@@ -35,7 +35,7 @@ closeModal(){
 
 renderDrink(drink,i) {
   const image = this.makeImgUrls(i);
-  const youTube = 'http://www.youtube.com/embed/';
+  const youTube = 'https://www.youtube.com/embed/';
   const ingredArr = [];
 
   drink.ingredients.forEach(ingred => {
