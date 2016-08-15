@@ -56,6 +56,7 @@ class About extends Component{
       <div>
         <HomeImage />
         <Header />
+
         <div className='wrapper'>
           <div className="infoCard">
              <Modal show={this.state.showModalCarrow} onHide={() => this.closeModal('carrow')}>
@@ -95,6 +96,26 @@ class About extends Component{
                     About Nate
             </Button>
           </div>
+
+        <div className="wrapper">
+        <div className="infoCard">
+           <Modal show={this.state.showModalCarrow} onHide={() => this.closeModal('carrow')}>
+              <Modal.Header closeButton>
+                <Modal.Title className='title'>Carrow Thibault</Modal.Title>
+              </Modal.Header>
+              <Modal.Body>
+                <p>{Profiles.carrowText()}</p>
+              </Modal.Body>
+              <Modal.Footer>
+                <Button bsStyle='primary' onClick={(name) => this.closeModal('carrow')}>Close</Button>
+              </Modal.Footer>
+            </Modal>
+            <div className='aboutContainer1'>
+              <img className='carrowPic'/><br></br>
+              <Button className='button' bsStyle="danger" onClick={() => this.openModal('carrow')}>
+                  About Carrow
+              </Button>
+            </div>
         </div>
 
           <div className="infoCard">
@@ -115,6 +136,7 @@ class About extends Component{
               </Button>
             </div>
           </div>
+        </div>
         </div>
 
       <Footer />
