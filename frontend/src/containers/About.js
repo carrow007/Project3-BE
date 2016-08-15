@@ -56,7 +56,7 @@ class About extends Component{
       <div>
         <HomeImage />
         <Header />
-
+        <div className="wrapper">
         <div className="infoCard">
            <Modal show={this.state.showModalCarrow} onHide={() => this.closeModal('carrow')}>
               <Modal.Header closeButton>
@@ -114,6 +114,7 @@ class About extends Component{
             <Button className='button' bsStyle="danger" onClick={() => this.openModal('baba')}>About Babajide
             </Button>
           </div>
+        </div>
         </div>
 
       <Footer />
