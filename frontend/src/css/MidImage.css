@@ -1,0 +1,6 @@
+.midImage {
+  background-size: cover;
+  height: 25vh;
+  width: 100vw;
+  background: url("../assets/outside.jpg");
+}

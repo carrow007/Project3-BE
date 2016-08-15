@@ -1,0 +1,43 @@
+.App {
+  text-align: center;
+}
+
+.navButtons {
+  display: flex;
+  margin: 3%;
+  align-items: center;
+  justify-content: center;
+}
+
+.selector {
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+
+.baseLink {
+  background-color: #0d0d0d;
+  height: 20px;
+  width: 50px;
+}
+
+.viewAllLink {
+  border: 3 px solid blue;
+  height: 20px;
+  width: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: grey;
+  font-size: 15px;
+
+}
+
+a:hover {
+  color: white;
+  text-decoration: none
+}
+

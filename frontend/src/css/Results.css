@@ -1,0 +1,45 @@
+.resultsLi {
+  list-style: none;
+  color: #dedede;
+  font-family: helvetica;
+  font-weight: bold;
+}
+
+.iframVid {
+  border-radius: 10px;
+}
+
+.drinkDiv {
+  margin-top: 3%;
+}
+
+.drinkDiv:nth-of-type(even) {
+    background: #444;
+}
+
+.pic {
+  margin: 4%;
+}
+
+.resultsUl {
+  text-align: center;
+  width: 75vw;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.button {
+  margin: 3%;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.display {
+  color: #ccc;
+  font-size: 20px ;
+}
