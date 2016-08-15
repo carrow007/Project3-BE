@@ -68,7 +68,7 @@ class MakeOwn extends Component {
     return(
       <div>
         <div className='base'>
-          <div className='wrapper'>
+          <div className='wrapper1'>
             <Button bsStyle="success" bsSize="large" className='liquor' onClick={() => this.handleClickGo('brandy')}>Brandy</Button>
             <Button bsStyle="info" bsSize="large" className='liquor' onClick={() => this.handleClickGo('gin')}>Gin</Button>
             <Button bsStyle="primary" bsSize="large" className='liquor' onClick={() => this.handleClickGo('rum')}>Rum</Button>
