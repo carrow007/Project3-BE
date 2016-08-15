@@ -1,0 +1,20 @@
+.heading {
+  color: #ddd;
+  margin: 0;
+}
+
+.goButton {
+  margin-left: 2%;
+}
+
+.input {
+  border-radius: 5px;
+  border: none;
+  padding: 1%;
+  margin: 0;
+  background-color: #ddd;
+}
+
+.drinkForm {
+  margin: 40px;
+}

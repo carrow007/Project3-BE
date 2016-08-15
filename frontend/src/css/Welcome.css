@@ -1,0 +1,9 @@
+.mainTitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: helvetica;
+  color: white;
+  text-shadow: 2px 2px 8px #151515;
+}

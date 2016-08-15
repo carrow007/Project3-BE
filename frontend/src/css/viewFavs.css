@@ -1,0 +1,37 @@
+
+.favUl {
+  text-align: center;
+  width: 75vw;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.favLi {
+  list-style: none;
+  margin-top: 6px;
+  color: white;
+  text-shadow: 2px 2px 8px #151515;
+  font-family: helvetica;
+  font-weight: bold;
+  text-align: center;
+
+}
+
+.favDelete {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.drinkDiv:nth-of-type(even) {
+    background-color: #444;
+}
+
+.pic {
+  margin: 4%;
+}

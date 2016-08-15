@@ -1,0 +1,7 @@
+.homeImage {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 30vh;
+  width: 100vw;
+  background: url("../assets/banner.jpg");
+}
