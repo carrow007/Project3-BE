@@ -14,7 +14,7 @@ constructor(props){
 
 makeImgUrls(index) {
   const size = '200x250/';
-  const image = 'http://assets.absolutdrinks.com/drinks/solid-background-black/soft-shadow/floor-reflection/' + size + this.props.names[index] + '.jpg';
+  const image = '//assets.absolutdrinks.com/drinks/solid-background-black/soft-shadow/floor-reflection/' + size + this.props.names[index] + '.jpg';
   // console.log('imgUrl:', image);
   return image;
 }
