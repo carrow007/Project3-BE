@@ -56,63 +56,64 @@ class About extends Component{
       <div>
         <HomeImage />
         <Header />
+        <div className='wrapper'>
+          <div className="infoCard">
+             <Modal show={this.state.showModalCarrow} onHide={() => this.closeModal('carrow')}>
+                <Modal.Header closeButton>
+                  <Modal.Title className='title'>Carrow Thibault</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>
+                  <p>{Profiles.carrowText()}</p>
+                </Modal.Body>
+                <Modal.Footer>
+                  <Button bsStyle='primary' onClick={(name) => this.closeModal('carrow')}>Close</Button>
+                </Modal.Footer>
+              </Modal>
+              <div className='aboutContainer1'>
+                <img className='carrowPic'/><br></br>
+                <Button className='button' bsStyle="danger" onClick={() => this.openModal('carrow')}>
+                    About Carrow
+                </Button>
+              </div>
+          </div>
 
-        <div className="infoCard">
-           <Modal show={this.state.showModalCarrow} onHide={() => this.closeModal('carrow')}>
-              <Modal.Header closeButton>
-                <Modal.Title className='title'>Carrow Thibault</Modal.Title>
-              </Modal.Header>
-              <Modal.Body>
-                <p>{Profiles.carrowText()}</p>
-              </Modal.Body>
-              <Modal.Footer>
-                <Button bsStyle='primary' onClick={(name) => this.closeModal('carrow')}>Close</Button>
-              </Modal.Footer>
+          <div className="infoCard">
+              <Modal show={this.state.showModalNate} onHide={() => this.closeModal('nate')}>
+                <Modal.Header closeButton>
+                  <Modal.Title className='title'>Nate Smith</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>
+                  <p>{Profiles.nateText()}</p>
+                </Modal.Body>
+                <Modal.Footer>
+                  <Button bsStyle='primary' onClick={(name) => this.closeModal('nate')}>Close</Button>
+                </Modal.Footer>
+              </Modal>
+              <div className='aboutContainer1'>
+              <img className='natePic'/><br></br>
+                <Button className='button' bsStyle="danger" onClick={() => this.openModal('nate')}>
+                    About Nate
+            </Button>
+          </div>
+        </div>
+
+          <div className="infoCard">
+            <Modal show={this.state.showModalBaba} onHide={() => this.closeModal('baba')}>
+                <Modal.Header closeButton>
+                  <Modal.Title className='title'>Babajide Kale</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>
+                  <p>{Profiles.babaText()}</p>
+                </Modal.Body>
+                <Modal.Footer>
+                  <Button bsStyle='primary' onClick={(name) => this.closeModal('baba')}>Close</Button>
+                </Modal.Footer>
             </Modal>
             <div className='aboutContainer1'>
-              <img className='carrowPic'/><br></br>
-              <Button className='button' bsStyle="danger" onClick={() => this.openModal('carrow')}>
-                  About Carrow
+              <img className='babaPic'/><br></br>
+              <Button className='button' bsStyle="danger" onClick={() => this.openModal('baba')}>About Babajide
               </Button>
             </div>
-        </div>
-
-        <div className="infoCard">
-            <Modal show={this.state.showModalNate} onHide={() => this.closeModal('nate')}>
-              <Modal.Header closeButton>
-                <Modal.Title className='title'>Nate Smith</Modal.Title>
-              </Modal.Header>
-              <Modal.Body>
-                <p>{Profiles.nateText()}</p>
-              </Modal.Body>
-              <Modal.Footer>
-                <Button bsStyle='primary' onClick={(name) => this.closeModal('nate')}>Close</Button>
-              </Modal.Footer>
-            </Modal>
-            <div className='aboutContainer1'>
-            <img className='natePic'/><br></br>
-              <Button className='button' bsStyle="danger" onClick={() => this.openModal('nate')}>
-                  About Nate
-          </Button>
-        </div>
-      </div>
-
-        <div className="infoCard">
-          <Modal show={this.state.showModalBaba} onHide={() => this.closeModal('baba')}>
-              <Modal.Header closeButton>
-                <Modal.Title className='title'>Babajide Kale</Modal.Title>
-              </Modal.Header>
-              <Modal.Body>
-                <p>{Profiles.babaText()}</p>
-              </Modal.Body>
-              <Modal.Footer>
-                <Button bsStyle='primary' onClick={(name) => this.closeModal('baba')}>Close</Button>
-              </Modal.Footer>
-          </Modal>
-          <div className='aboutContainer1'>
-            <img className='babaPic'/><br></br>
-            <Button className='button' bsStyle="danger" onClick={() => this.openModal('baba')}>About Babajide
-            </Button>
           </div>
         </div>
 

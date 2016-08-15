@@ -13,6 +13,11 @@
   color: #ddd;
 }
 
+.wrapper {
+  display: flex;
+  align-items: center;
+}
+
 .infoCard {
   align-items: center;
   height: 400px;
@@ -26,7 +31,7 @@
 .natePic, .carrowPic, .babaPic {
   background-size: 100px 100px;
   height: 100px;
-  width: 100px;
+  width: 200px;
 }
 
 .aboutLink {
@@ -56,14 +61,14 @@ p {
   font-size: 16px;
 }
 
-/*.natePic {
-  background-image: url('');
-}*/
+.natePic {
+  background-image: url('../assets/nate_profile.jpg');
+}
 
-/*.carrowPic {
-  background-image: url('');
+.carrowPic {
+  background-image: url('../assets/carrow_profile.jpg');
 }
 
 .babaPic {
-  background-image: url('');
-}*/
+  background-image: url('../assets/baba_profile.jpg');
+}
