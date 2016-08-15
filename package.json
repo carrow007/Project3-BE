@@ -8,6 +8,10 @@
     "start": "node server.js",
     "postinstall": "cd frontend && npm install && npm run build"
   },
+  "engines": {
+    "node": "6.2.1",
+    "npm": "3.10.2"
+  },
   "author": "Nate, Carrow, Baba",
   "license": "MIT",
   "dependencies": {
