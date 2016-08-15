@@ -5,12 +5,12 @@ const GetThis = {
   searchByDrink: function(searchTerm) {
     // console.log('searchTerm:', searchTerm);
 
-    var beUrl = null;
-    if (process.env.PORT) {
-      beUrl = 'https://intense-castle-31240.herokuapp.com/';
-    } else {
-      beUrl = 'http://localhost:8080/';
-    }
+    var beUrl = '/';
+    // if (process.env.PORT) {
+    //   beUrl = 'https://intense-castle-31240.herokuapp.com/';
+    // } else {
+    //   beUrl = 'http://localhost:8080/';
+    // }
 
     return axios({
       method: 'GET',
@@ -20,12 +20,12 @@ const GetThis = {
 
   getAll: function() {
 
-    var beUrl = null;
-    if (process.env.PORT) {
-      beUrl = 'https://intense-castle-31240.herokuapp.com/';
-    } else {
-      beUrl = 'http://localhost:8080/';
-    }
+    var beUrl = '/';
+    // if (process.env.PORT) {
+    //   beUrl = 'https://intense-castle-31240.herokuapp.com/';
+    // } else {
+    //   beUrl = 'http://localhost:8080/';
+    // }
 
     return axios({
       method: 'GET',
@@ -35,12 +35,12 @@ const GetThis = {
 
   getBase: function(searchTerm) {
 
-    var beUrl = null;
-    if (process.env.PORT) {
-      beUrl = 'https://intense-castle-31240.herokuapp.com/';
-    } else {
-      beUrl = 'http://localhost:8080/';
-    }
+    var beUrl = '/';
+    // if (process.env.PORT) {
+    //   beUrl = 'https://intense-castle-31240.herokuapp.com/';
+    // } else {
+    //   beUrl = 'http://localhost:8080/';
+    // }
 
     return axios({
       method: 'GET',
