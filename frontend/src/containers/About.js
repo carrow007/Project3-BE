@@ -16,7 +16,6 @@ class About extends Component{
     }
   }
 
-
   openModal(name){
     console.log('clicked:', name)
     if (name === 'nate') {
@@ -70,7 +69,7 @@ class About extends Component{
                   <Button bsStyle='primary' onClick={(name) => this.closeModal('carrow')}>Close</Button>
                 </Modal.Footer>
               </Modal>
-              <div className='aboutContainer1'>
+              <div className='aboutContainer'>
                 <img className='carrowPic'/><br></br>
                 <Button className='button' bsStyle="danger" onClick={() => this.openModal('carrow')}>
                     About Carrow
@@ -90,7 +89,7 @@ class About extends Component{
                   <Button bsStyle='primary' onClick={(name) => this.closeModal('nate')}>Close</Button>
                 </Modal.Footer>
               </Modal>
-              <div className='aboutContainer1'>
+              <div className='aboutContainer'>
                 <img className='natePic'/><br></br>
                   <Button className='button' bsStyle="danger" onClick={() => this.openModal('nate')}>
                       About Nate
@@ -110,7 +109,7 @@ class About extends Component{
                   <Button bsStyle='primary' onClick={(name) => this.closeModal('baba')}>Close</Button>
                 </Modal.Footer>
             </Modal>
-            <div className='aboutContainer1'>
+            <div className='aboutContainer'>
               <img className='babaPic'/><br></br>
               <Button className='button' bsStyle="danger" onClick={() => this.openModal('baba')}>About Babajide
               </Button>
